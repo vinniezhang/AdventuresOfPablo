@@ -12,19 +12,19 @@
 <p> click the SWAP button to rearrange them in the order you selected. Then click RUN. Once done, click the right arrow to continue. </p>
 
 <div id="c1-a">
-	<img id="bkgd1" src="images/C1F1_still.jpg" width=23% height=23% onclick = "spotWriteA()">
-	<img id="bkgd2" src="images/C1F2_still.jpg" width=23% height=23% onclick = "spotWriteB()">
-	<img id="bkgd3" src="images/C1F3_still.jpg" width=23% height=23% onclick = "spotWriteC()">
-	<img id="bkgd4" src="images/C1F4_still.jpg" width=23% height=23% onclick = "spotWriteD()">
+	<img id="bkgd1" src="C1F1_still.jpg" width=23% height=23% onclick = "spotWriteA()">
+	<img id="bkgd2" src="C1F2_still.jpg" width=23% height=23% onclick = "spotWriteB()">
+	<img id="bkgd3" src="C1F3_still.jpg" width=23% height=23% onclick = "spotWriteC()">
+	<img id="bkgd4" src="C1F4_still.jpg" width=23% height=23% onclick = "spotWriteD()">
 </div>
 
 
 <div class = "buttons">
 
-<a href="C1_background.html"><img id="previous" src="images/arrowL.png" width= 15% height=15%> </a>
-<img id="swap" src="images/buttonSWAP.png" width= 12% height=12% onclick = "spotSwap()">
-<img id="run" src="images/buttonRUN.png" width= 12% height=12% onclick = "startPlayA()">
-<a href="C2_background.html"><img id="previous" src="images/arrowR.png" width= 15% height=15%></a>
+<a href="C1_background.html"><img id="previous" src="arrowL.png" width= 15% height=15%> </a>
+<img id="swap" src="buttonSWAP.png" width= 12% height=12% onclick = "spotSwap()">
+<img id="run" src="buttonRUN.png" width= 12% height=12% onclick = "startPlayA()">
+<a href="C2_background.html"><img id="previous" src="arrowR.png" width= 15% height=15%></a>
 
 </div>
 
@@ -39,8 +39,8 @@
 	var gifList = [];
 	
 	function spotWriteA(){
-		spotList.push("images/C1F1_still.jpg");
-		gifList.push("gifs/C1F1.gif");
+		spotList.push("C1F1_still.jpg");
+		gifList.push("C1F1.gif");
 		console.log(spotList);
 		console.log(gifList);
 		document.getElementById("bkgd1").style.filter = "none";
@@ -48,9 +48,9 @@
 	}
 
 	function spotWriteB(){
-		spotList.push("images/C1F2_still.jpg");
+		spotList.push("C1F2_still.jpg");
 		console.log(spotList);
-		gifList.push("gifs/C1F2.gif");
+		gifList.push("C1F2.gif");
 		console.log(gifList);
 		document.getElementById("bkgd2").style.filter = "none";
 
@@ -58,9 +58,9 @@
 	}
 
 	function spotWriteC(){
-		spotList.push("images/C1F3_still.jpg");
+		spotList.push("C1F3_still.jpg");
 		console.log(spotList);
-		gifList.push("gifs/C1F3.gif");
+		gifList.push("C1F3.gif");
 		console.log(gifList);
 		document.getElementById("bkgd3").style.filter = "none";
 
@@ -69,9 +69,9 @@
 	}
 
 	function spotWriteD(){
-		spotList.push("images/C1F4_still.jpg");
+		spotList.push("C1F4_still.jpg");
 		console.log(spotList);
-		gifList.push("gifs/C1F4.gif");
+		gifList.push("C1F4.gif");
 		console.log(gifList);
 		document.getElementById("bkgd4").style.filter = "none";
 
