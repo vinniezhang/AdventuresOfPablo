@@ -1,0 +1,83 @@
+body{
+	background-color: black;
+	color: white;
+}
+
+#title_page{
+	padding-top:150px;
+	text-align: center;
+	font-size: 75px;
+	font-family: courier;
+}
+
+#end{
+	padding-top: 200px;
+	font-size: 70px;
+}
+
+h1{
+	text-align: center;
+	font-family: courier;
+	font-size: 40px;
+}
+
+p {
+	text-align: center;
+	font-family: courier;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#bkgd1:hover, #bkgd2:hover, #bkgd3:hover, #bkgd4:hover{
+	width:24%;
+	height:24%;
+}
+
+#c1-b, #c2-b, #c3-b {
+	text-align: center;
+	padding-top: 85px;
+
+}
+
+#c1-a, #c2-a, #c3-a {
+	text-align: center;
+	padding-top: 45px;
+}
+
+#bkgd1, #bkgd2, #bkgd3, #bkgd4{
+	padding-left: 5px;
+	padding-right: 5px;
+	filter: grayscale(1);
+}
+
+
+.buttons {
+	margin-top: 50px;
+	text-align:center;
+}
+
+#start:hover{
+	font-size: 50px;
+}
+
+#start {
+	margin-top: 40px;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: courier;
+	color: black;
+	text-decoration: none;
+}
+
+#next, #previous, #run, #swap {
+	font-size: 25px;
+	font-family: courier;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+a{
+	text-decoration:none;
+}
+

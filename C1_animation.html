@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Chapter One </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<h1> CHAPTER ONE </h1>
+
+<p> <u>Directions:</u> Help Pablo escape! Click the images in the order of which you want them to play in. After you've clicked on each image, </p >
+<p> click the SWAP button to rearrange them in the order you selected. Then click RUN. Once done, click the right arrow to continue. </p>
+
+<div id="c1-a">
+	<img id="bkgd1" src="images/C1F1_still.jpg" width=23% height=23% onclick = "spotWriteA()">
+	<img id="bkgd2" src="images/C1F2_still.jpg" width=23% height=23% onclick = "spotWriteB()">
+	<img id="bkgd3" src="images/C1F3_still.jpg" width=23% height=23% onclick = "spotWriteC()">
+	<img id="bkgd4" src="images/C1F4_still.jpg" width=23% height=23% onclick = "spotWriteD()">
+</div>
+
+
+<div class = "buttons">
+
+<a href="C1_background.html"><img id="previous" src="images/arrowL.png" width= 15% height=15%> </a>
+<img id="swap" src="images/buttonSWAP.png" width= 12% height=12% onclick = "spotSwap()">
+<img id="run" src="images/buttonRUN.png" width= 12% height=12% onclick = "startPlayA()">
+<a href="C2_background.html"><img id="previous" src="images/arrowR.png" width= 15% height=15%></a>
+
+</div>
+
+
+<script type="text/javascript">
+
+	
+
+	//Spot (+ gif swap) swap function
+
+	var spotList = [];
+	var gifList = [];
+	
+	function spotWriteA(){
+		spotList.push("images/C1F1_still.jpg");
+		gifList.push("gifs/C1F1.gif");
+		console.log(spotList);
+		console.log(gifList);
+		document.getElementById("bkgd1").style.filter = "none";
+
+	}
+
+	function spotWriteB(){
+		spotList.push("images/C1F2_still.jpg");
+		console.log(spotList);
+		gifList.push("gifs/C1F2.gif");
+		console.log(gifList);
+		document.getElementById("bkgd2").style.filter = "none";
+
+
+	}
+
+	function spotWriteC(){
+		spotList.push("images/C1F3_still.jpg");
+		console.log(spotList);
+		gifList.push("gifs/C1F3.gif");
+		console.log(gifList);
+		document.getElementById("bkgd3").style.filter = "none";
+
+
+
+	}
+
+	function spotWriteD(){
+		spotList.push("images/C1F4_still.jpg");
+		console.log(spotList);
+		gifList.push("gifs/C1F4.gif");
+		console.log(gifList);
+		document.getElementById("bkgd4").style.filter = "none";
+
+	}
+
+
+	function spotSwap(){
+		document.getElementById("bkgd1").src = spotList[0];
+		document.getElementById("bkgd2").src = spotList[1];
+		document.getElementById("bkgd3").src = spotList[2];
+		document.getElementById("bkgd4").src = spotList[3];
+
+	}
+
+
+
+	//GIF play function
+	
+	function startPlayA(){
+
+		document.getElementById("bkgd1").src = gifList[0];
+		setTimeout(stopPlayA, 2300);
+		setTimeout(startPlayB, 2800);
+
+	}
+
+	function stopPlayA(){
+		document.getElementById("bkgd1").src = spotList[0];
+	}
+
+	function startPlayB(){
+		document.getElementById("bkgd2").src = gifList[1];
+		setTimeout(stopPlayB, 2300);
+		setTimeout(startPlayC, 2800);
+
+	}
+
+	function stopPlayB(){
+		document.getElementById("bkgd2").src = spotList[1];
+	}
+
+	function startPlayC(){
+		document.getElementById("bkgd3").src = gifList[2];
+		setTimeout(stopPlayC, 2300);
+		setTimeout(startPlayD, 2800);
+
+	}
+
+	function stopPlayC(){
+		document.getElementById("bkgd3").src = spotList[2];
+	}
+
+	function startPlayD(){
+		document.getElementById("bkgd4").src = gifList[3];
+		setTimeout(stopPlayD, 2300);
+
+	}
+
+	function stopPlayD(){
+		document.getElementById("bkgd4").src = spotList[3];
+	}
+
+
+</script>
+
+
+
+
+</body>
+</html>
+

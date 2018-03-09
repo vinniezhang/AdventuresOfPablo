@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> The End </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onload= "typeWriter1()">
+	<p id="end"></p>
+
+	<script>
+
+		var i = 0;
+		var txt1 = 'THE END';
+		var txt2 = '?';
+		var speed1 = 300; 
+		var speed2 = 1000;
+
+		function typeWriter1() {
+
+		  if (i < txt1.length) {
+		    document.getElementById("end").innerHTML += txt1.charAt(i);
+		    i++;
+		    setTimeout(typeWriter1, speed1);
+		  } else {
+		  	setTimeout(typeWriter2, speed2);
+		  }
+
+		 function typeWriter2(){
+		 	document.getElementById("end").innerHTML += txt2.charAt(0);
+		 }
+
+
+		}
+
+	</script>
+
+</body>
+</html>
